@@ -2,6 +2,7 @@ const express=require("express")
 const app =express()
 const {connection} = require("./db")
 const {TripRouter} = require("./routes/triproute")
+require("dotenv").config()
 app.use(express.json());
 
 
