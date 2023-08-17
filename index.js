@@ -3,6 +3,10 @@ const app =express()
 const {connection} = require("./db")
 const {TripRouter} = require("./routes/triproute")
 require("dotenv").config()
+const cors = require('cors')
+
+ 
+app.use(cors())
 app.use(express.json());
 
 
